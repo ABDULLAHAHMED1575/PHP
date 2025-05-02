@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    background-color:rgb(181, 255, 249) ;
+}
+.containers{
+    flex-direction: column;
+}
+.form-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.form-field:has(input:hover) input:not(:hover){
+    filter: blur(1px);
+}
+.form-field:has(input:hover) button:not(:hover) {
+    filter: blur(1px);
+  }
+.form-field:hover{
+    box-shadow: 5px 5px 10px 10px rgba(167, 167, 248, 0.2);
+}
+::placeholder{
+    color: white;
+}
+input:focus-visible{
+    outline: none;
+}
+.name{
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-bottom:2px solid red;
+}
+.name:focus{
+    border-radius: none;
+}
+.email{
+    width: 300px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: wheat;
+    border: none;
+    border-bottom:2px solid red;
+}
+.password{
+    width: 300px;
+    padding: 10px;
+    background-color: transparent;
+    color: wheat;
+    border-radius: 20px;
+    border: none;
+    border-bottom:2px solid red;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+button{
+    padding: 5px;
+    width: 90px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom:2px solid red;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
+button:hover{
+    font-size: 20px;
+    background-color: rgb(147, 147, 247);
+}
+table{
+    border: 2px solid black;
+}
+th td{
+    border: 2px solid red;
+}
